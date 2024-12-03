@@ -93,8 +93,15 @@ const HeroSection = () => {
       setCurrentSlide(swiperRef?.current?.swiper?.realIndex);
     }, 500);
     const progressPercentage =
-      ((swiperRef?.current?.swiper?.realIndex % Slides.length) / (Slides.length - 1)) * 100;
-      console.log(swiperRef?.current?.swiper?.realIndex, swiperRef?.current?.swiper?.realIndex % Slides.length, "progress", progressPercentage);
+      ((swiperRef?.current?.swiper?.realIndex % Slides.length) /
+        (Slides.length - 1)) *
+      100;
+    console.log(
+      swiperRef?.current?.swiper?.realIndex,
+      swiperRef?.current?.swiper?.realIndex % Slides.length,
+      "progress",
+      progressPercentage
+    );
     setProgress(progressPercentage);
   }, []);
 
@@ -155,9 +162,79 @@ const HeroSection = () => {
           style={{ zIndex: 1, objectFit: "cover" }}
         />
       </div>
-      <div className="flex flex-wrap border-2 border-red-800">
+
+      <div className="h-screen w-full flex flex-col md:flex-row">
+        <div className="w-[50%] pt-[130px] mx-8 md:mt-[170px]">
+          <div
+            className={`absolute ${animation} flex flex-col items-start`}
+            key={currentSlide}
+          >
+            <div
+              className="absolute"
+              style={{
+                width: "100px",
+                height: "2px",
+                backgroundColor: "#ddb443",
+                marginLeft: "7px",
+                marginBottom: "15px",
+              }}
+            ></div>
+            <div className="">
+              <h1 className="uppercase text-4xl md:text-8xl font-league font-bold text-[#FEFEFE]">
+                {Slides[currentSlide].title}
+              </h1>
+              <p
+                className="text-wrap text-sm md:text-xl md:w-[470px] font-montserrat font-thin"
+                style={{ color: "#FFFFFF" }}
+              >
+                {Slides[currentSlide].desc}.
+              </p>
+              <button
+                className="capitalize font-montserrat rounded-full h-8 w-44 mt-4 md:h-10 md:w-32 md:mt-6"
+                style={{ backgroundColor: "#FFFFFF33" }}
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-[50%] mt-[230px] md:mt-80 mx-6 md:pl-10">
+        <Swiper
+            slidesPerView={4}
+            spaceBetween={50}
+            speed={800}
+            loop={true}
+            effect={"fade"}
+            navigation={{
+              prevEl: ".custom-prev",
+              nextEl: ".custom-next",
+            }}
+            pagination={{
+              el: ".custom-pagination",
+              clickable: true,
+            }}
+            modules={[Navigation, Pagination]}
+            className="mySwiper w-[550px] md:w-full rounded-xl"
+            ref={swiperRef}
+          >
+            {Slides.map((Slides, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={Slides.url}
+                  alt=""
+                  className={`transition-transform duration-700 transform hover:scale-105 object-cover rounded-md h-44 md:w-44 md:h-56`}
+                  style={{
+                    animation: "zoomOut 800ms ease-in-out",
+                  }}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      {/* <div className="flex flex-wrap border-2 border-red-800"> */}
         {/* Left Description Content */}
-        <div
+        {/* <div
           className="absolute h-1/2 w-1/2 left-16 bottom-4"
           style={{ zIndex: 1 }}
         >
@@ -193,10 +270,10 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Swiper Slider */}
-        <div className=" absolute bottom-4 left-[50%] w-[65%] h-1/2 overflow-x-hidden">
-          <Swiper
+        {/* <div className=" absolute bottom-4 left-[50%] w-[65%] h-1/2 overflow-x-hidden"> */}
+          {/* <Swiper
             slidesPerView={4}
             spaceBetween={-100}
             speed={800}
@@ -220,24 +297,26 @@ const HeroSection = () => {
                 <img
                   src={Slides.url}
                   alt=""
-                  className={`transition-transform duration-700 transform hover:scale-105 object-cover rounded-lg w-44 h-56`}
+                  className={`transition-transform duration-700 transform hover:scale-105 object-cover rounded-md w-44 h-56`}
                   style={{
                     animation: "zoomOut 800ms ease-in-out",
                   }}
                 />
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
           {/* Custom Navigation Buttons */}
           {/* <div className="custom-prev">❮</div>
           <div className="custom-next">❯</div> */}
 
           {/* Custom Pagination */}
           {/* <div className="custom-pagination"></div> */}
-        </div>
+        {/* </div> */}
+      {/* </div> */}
+      <div>
         {/* Navigation Buttons */}
         <div
-          className="absolute flex justify-between bottom-16 left-[50%] gap-6"
+          className="absolute flex justify-between bottom-0 left-[25%] md:bottom-16 md:left-[50%] gap-6"
           style={{ zIndex: 1 }}
         >
           <div className="text-white text-3xl custom-prev cursor-pointer">
@@ -248,13 +327,22 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Progress Bar */}
-        <div className="absolute flex bottom-[85px] w-[460px] right-36 bg-[#FFFFFF80] h-2 rounded-full overflow-hidden" style={{ zIndex: 1 }}>
-            <div
-              className="bg-[#FBC21E] h-full transition-all duration-500 "
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-            <div className="absolute font-gothic text-5xl bottom-[55px] right-24 h-14 w-7 text-[#FFFFFF]" style={{ zIndex: 1 }}>0{currentSlide + 1}</div>
+        <div
+          className="absolute flex bottom-14 w-[230px] right-14 md:bottom-[85px] md:w-[460px] md:right-36 bg-[#FFFFFF80] h-2 rounded-full overflow-hidden"
+          style={{ zIndex: 1 }}
+        >
+          <div
+            className="bg-[#FBC21E] h-full transition-all duration-500 "
+            style={{ width: `${progress}%` }}
+          ></div>
+        </div>
+        <div
+          className="absolute font-gothic text-3xl md:text-5xl bottom-6 md:bottom-[55px] left-[270px] md:left-[92%] h-14 w-7 text-[#FFFFFF]"
+          style={{ zIndex: 1 }}
+        >
+          0{currentSlide + 1}
+        </div>
+
       </div>
     </section>
   );
