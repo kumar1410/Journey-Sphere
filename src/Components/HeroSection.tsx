@@ -13,61 +13,61 @@ interface SlideConst {
 const Slides: SlideConst[] = [
   {
     id: 0,
-    url: "../../src/assets/Indonesia.png",
+    url: "../../../public/assets/Indonesia.png",
     title: "Indonesia",
     desc: "Explore Indonesia, a stunning archipelago of 17,000+ islands where natural beauty and cultural diversity blend seamlessly. From lush jungles to serene beaches, it's a destination of unforgettable adventures and tranquility.",
   },
   {
     id: 1,
-    url: "../../src/assets/Africa.png",
+    url: "../../../public/assets/Africa.png",
     title: "Africa",
     desc: "Discover South Africa's breathtaking landscapes and vibrant culture, from Table Mountain to the wildlife of Kruger National Park. An unforgettable adventure awaits every traveler!",
   },
   {
     id: 2,
-    url: "../../src/assets/Arizona.png",
+    url: "../../../public/assets/Arizona.png",
     title: "Arizona",
     desc: "a natural wonder carved by the Colorado River, offering breathtaking views and unforgettable hikes. Explore its vast landscapes, perfect for adventure and nature lovers alike.",
   },
   {
     id: 3,
-    url: "../../src/assets/Brazil.png",
+    url: "../../../public/assets/Brazil.png",
     title: "brazil",
     desc: "Discover the vibrant energy of Brazil, where lush rainforests, stunning beaches, and iconic landmarks like Christ the Redeemer await. Experience a thrilling blend of culture, nature, and adventure!",
   },
   {
     id: 4,
-    url: "../../src/assets/Egypt.png",
+    url: "../../../public/assets/Egypt.png",
     title: "Egypt",
     desc: "Explore the timeless wonders of Egypt, home to the iconic pyramids, ancient temples, and the majestic Nile River. Immerse yourself in the rich history and vibrant culture of this land of pharaohs and legends.",
   },
   {
     id: 5,
-    url: "../../src/assets/kashmir.png",
+    url: "../../../public/assets/kashmir.png",
     title: "Kashmir",
     desc: `Experience the breathtaking beauty of Kashmir, often called "Paradise on Earth." With its stunning landscapes, lush valleys, and serene lakes, Kashmir offers a perfect blend of natural wonder and rich culture.`,
   },
   // {
   //   id: 6,
-  //   url: "../../src/assets/Africa.png",
+  //   url: "../../../public/assets/Africa.png",
   //   title:"",
   //   desc:""
   // },
   // {
   //   id: 7,
-  //   url: "../../src/assets/Arizona.png",
+  //   url: "../../../public/assets/Arizona.png",
   //   title:"",
   //   desc:""
   // },
   // {
   //   id: 8,
-  //   url: "../../src/assets/Brazil.png",
+  //   url: "../../../public/assets/Brazil.png",
   //   title:"",
   //   desc:""
   // },
   // {
   //   id: 9,
-  //   url: "../../src/assets/Egypt.png",
+  //   url: "../../../public/assets/Egypt.png",
   //   title:"",
   //   desc:""
   // },
@@ -199,7 +199,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="w-full md:w-[50%] mt-[230px] md:mt-80 mx-6 md:pl-10">
-        <Swiper
+          <Swiper
             slidesPerView={4}
             spaceBetween={50}
             speed={800}
@@ -233,8 +233,8 @@ const HeroSection = () => {
         </div>
       </div>
       {/* <div className="flex flex-wrap border-2 border-red-800"> */}
-        {/* Left Description Content */}
-        {/* <div
+      {/* Left Description Content */}
+      {/* <div
           className="absolute h-1/2 w-1/2 left-16 bottom-4"
           style={{ zIndex: 1 }}
         >
@@ -271,9 +271,9 @@ const HeroSection = () => {
             </div>
           </div>
         </div> */}
-        {/* Swiper Slider */}
-        {/* <div className=" absolute bottom-4 left-[50%] w-[65%] h-1/2 overflow-x-hidden"> */}
-          {/* <Swiper
+      {/* Swiper Slider */}
+      {/* <div className=" absolute bottom-4 left-[50%] w-[65%] h-1/2 overflow-x-hidden"> */}
+      {/* <Swiper
             slidesPerView={4}
             spaceBetween={-100}
             speed={800}
@@ -305,13 +305,13 @@ const HeroSection = () => {
               </SwiperSlide>
             ))}
           </Swiper> */}
-          {/* Custom Navigation Buttons */}
-          {/* <div className="custom-prev">❮</div>
+      {/* Custom Navigation Buttons */}
+      {/* <div className="custom-prev">❮</div>
           <div className="custom-next">❯</div> */}
 
-          {/* Custom Pagination */}
-          {/* <div className="custom-pagination"></div> */}
-        {/* </div> */}
+      {/* Custom Pagination */}
+      {/* <div className="custom-pagination"></div> */}
+      {/* </div> */}
       {/* </div> */}
       <div>
         {/* Navigation Buttons */}
@@ -320,10 +320,10 @@ const HeroSection = () => {
           style={{ zIndex: 1 }}
         >
           <div className="text-white text-3xl custom-prev cursor-pointer">
-            <img src="../../src/assets/left.svg" alt="" />
+            <img src="../../../public/assets/left.svg" alt="" />
           </div>
           <div className="text-white text-3xl custom-next cursor-pointer">
-            <img src="../../src/assets/right.svg" alt="" />
+            <img src="../../../public/assets/right.svg" alt="" />
           </div>
         </div>
         {/* Progress Bar */}
@@ -342,7 +342,6 @@ const HeroSection = () => {
         >
           0{currentSlide + 1}
         </div>
-
       </div>
     </section>
   );

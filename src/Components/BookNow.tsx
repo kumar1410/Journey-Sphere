@@ -3,7 +3,7 @@ const BookNow = () => {
     <>
       <div className="relative flex flex-col md:flex-row h-auto md:h-[610px] w-full ">
         <img
-          src="../src/assets/bookNow.png"
+          src="../../public/assets/bookNow.png"
           alt=""
           className="absolute h-full w-full object-cover"
         />
@@ -16,14 +16,20 @@ const BookNow = () => {
           </h1>
           <p className="text-sm md:text-lg text-[#DFDFDF] font-montserrat font-thin mt-4">
             Whether you're planning a family vacation with your pet,
-            <span className="w-full block"> a relaxing weekend escape, or an adventurous trip,</span>
+            <span className="w-full block">
+              {" "}
+              a relaxing weekend escape, or an adventurous trip,
+            </span>
             <span className="w-full block">
               vacation rentals offer the perfect fit for any travel style.
             </span>
             <span className="w-full block">
               From cozy mountain cabins to scenic lakeside lodges,
             </span>
-            <span className="w-full block"> you’ll find the ideal spot to create unforgettable memories.</span>
+            <span className="w-full block">
+              {" "}
+              you’ll find the ideal spot to create unforgettable memories.
+            </span>
           </p>
           <button className="capitalize bg-[#ffffff15] rounded-full h-10 w-32 mt-6">
             book now
@@ -31,11 +37,20 @@ const BookNow = () => {
         </div>
 
         {/* Image Thumbnails */}
-         <div className=" pt-12 md:pt-28 z-10 grid grid-cols-2 grid-rows-2 justify-items-center items-center gap-4 pl-5 md:pl-44">
-            <img src="../../src/assets/Property 1=Component 29.png" className="w-40 h-40 md:h-44 md:w-44 object-cover"/>
-            <img src="../../src/assets/Property 1=Component 29.png" className="w-40 h-40 md:h-44 md:w-44 object-cover"/>
-            <img src="../../src/assets/Property 1=Component 29.png" className="w-40 h-40 md:h-44 md:w-44 object-cover col-span-2 justify-self-center"/>
-          </div>
+        <div className=" pt-12 md:pt-28 z-10 grid grid-cols-2 grid-rows-2 justify-items-center items-center gap-4 pl-5 md:pl-44">
+          <img
+            src="../../../public/assets/Property 1=Component 29.png"
+            className="w-40 h-40 md:h-44 md:w-44 object-cover"
+          />
+          <img
+            src="../../../public/assets/Property 1=Component 29.png"
+            className="w-40 h-40 md:h-44 md:w-44 object-cover"
+          />
+          <img
+            src="../../../public/assets/Property 1=Component 29.png"
+            className="w-40 h-40 md:h-44 md:w-44 object-cover col-span-2 justify-self-center"
+          />
+        </div>
 
         <div className="absolute w-full h-[305px] bg-book-now-up-grad"></div>
         <div className="absolute w-full -bottom-[400px] blur-lg h-[450px] bg-book-now-up-grad"></div>
@@ -55,7 +70,7 @@ const BookNow = () => {
           {/* Destination Inspiration */}
           <div className="flex flex-col items-center">
             <img
-              src="../src/assets/destinationInspiration.svg"
+              src="../../public/assets/destinationInspiration.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />
@@ -64,14 +79,16 @@ const BookNow = () => {
             </h1>
             <p className="text-white text-center font-thin font-montserrat text-xs md:text-sm pt-2">
               Discover unique spots, from{" "}
-              <span className="w-full block">famous landmarks to hidden gems.</span>
+              <span className="w-full block">
+                famous landmarks to hidden gems.
+              </span>
             </p>
           </div>
 
           {/* Custom Itineraries */}
           <div className="flex flex-col items-center">
             <img
-              src="../src/assets/customItenaries.svg"
+              src="../../public/assets/customItenaries.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />
@@ -80,14 +97,16 @@ const BookNow = () => {
             </h1>
             <p className="text-white text-center font-thin font-montserrat text-xs md:text-sm pt-2">
               Create personalized travel plans to{" "}
-              <span className="w-full block text-center">match your interests.</span>
+              <span className="w-full block text-center">
+                match your interests.
+              </span>
             </p>
           </div>
 
           {/* Stress-Free Travel */}
           <div className="flex flex-col items-center">
             <img
-              src="../src/assets/stressFreeTravel.svg"
+              src="../../public/assets/stressFreeTravel.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />
@@ -96,7 +115,9 @@ const BookNow = () => {
             </h1>
             <p className="text-white text-center font-thin font-montserrat text-xs md:text-sm pt-2">
               Expert tips and resources for a{" "}
-              <span className="w-full block text-center">smooth, hassle-free journey.</span>
+              <span className="w-full block text-center">
+                smooth, hassle-free journey.
+              </span>
             </p>
           </div>
         </div>
