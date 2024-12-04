@@ -3,7 +3,7 @@ const BookNow = () => {
     <>
       <div className="relative flex flex-col md:flex-row h-auto md:h-[610px] w-full ">
         <img
-          src="../../public/assets/bookNow.png"
+          src="src/assets/bookNow.png"
           alt=""
           className="absolute h-full w-full object-cover"
         />
@@ -39,15 +39,15 @@ const BookNow = () => {
         {/* Image Thumbnails */}
         <div className=" pt-12 md:pt-28 z-10 grid grid-cols-2 grid-rows-2 justify-items-center items-center gap-4 pl-5 md:pl-44">
           <img
-            src="../../../public/assets/Property 1=Component 29.png"
+            src="src/assets/Property 1=Component 29.png"
             className="w-40 h-40 md:h-44 md:w-44 object-cover"
           />
           <img
-            src="../../../public/assets/Property 1=Component 29.png"
+            src="src/assets/Property 1=Component 29.png"
             className="w-40 h-40 md:h-44 md:w-44 object-cover"
           />
           <img
-            src="../../../public/assets/Property 1=Component 29.png"
+            src="src/assets/Property 1=Component 29.png"
             className="w-40 h-40 md:h-44 md:w-44 object-cover col-span-2 justify-self-center"
           />
         </div>
@@ -70,7 +70,7 @@ const BookNow = () => {
           {/* Destination Inspiration */}
           <div className="flex flex-col items-center">
             <img
-              src="../../public/assets/destinationInspiration.svg"
+              src="src/assets/destinationInspiration.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />
@@ -88,7 +88,7 @@ const BookNow = () => {
           {/* Custom Itineraries */}
           <div className="flex flex-col items-center">
             <img
-              src="../../public/assets/customItenaries.svg"
+              src="src/assets/customItenaries.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />
@@ -106,7 +106,7 @@ const BookNow = () => {
           {/* Stress-Free Travel */}
           <div className="flex flex-col items-center">
             <img
-              src="../../public/assets/stressFreeTravel.svg"
+              src="src/assets/stressFreeTravel.svg"
               alt=""
               className="h-16 w-16 md:h-20 md:w-20"
             />

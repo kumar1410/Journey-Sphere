@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="absolute w-full h-[200px] -top-10 bg-book-now-up-grad -rotate-3"></div>
       {/* Background Image */}
       <img
-        src="../../public/assets/Footer-BG.png"
+        src="src/assets/Footer-BG.png"
         alt=""
         className="w-full h-full object-cover"
       />
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex pl-9 md:pl-0 md:justify-start">
           <a href="#home">
             <img
-              src="../../public/assets/Nav-Logo.png"
+              src="src/assets/Nav-Logo.png"
               alt="Logo"
               className="w-40 md:w-auto"
             />
@@ -56,17 +56,17 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex gap-4 justify-center md:pl-[142px]">
           <img
-            src="../../public/assets/facebook.png"
+            src="src/assets/facebook.png"
             alt="Facebook"
             className="w-6 md:w-auto"
           />
           <img
-            src="../../public/assets/Instagram.png"
+            src="src/assets/Instagram.png"
             alt="Instagram"
             className="w-6 md:w-auto"
           />
           <img
-            src="../../public/assets/Youtube.png"
+            src="src/assets/Youtube.png"
             alt="YouTube"
             className="w-6 md:w-auto"
           />

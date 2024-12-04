@@ -13,7 +13,7 @@ const Gallery = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-16 md:px-16 px-4  justify-center items-center pt-12 ">
         <div className="relative w-[140px] md:w-[272px] h-[150px] md:h-[440px] rounded-2xl group overflow-hidden transition-transform duration-500 hover:scale-[1.05] hover:translate-y-[4%]">
           <img
-            src="../../public/assets/Australlia.png"
+            src="src/assets/Australlia.png"
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-125 group-hover:translate-y-[-10%] rounded-2xl"
           />
@@ -28,7 +28,7 @@ const Gallery = () => {
         </div>
         <div className="relative w-[140px] md:w-[272px] h-[150px] md:h-[440px] rounded-2xl group overflow-hidden transition-transform duration-500 hover:scale-[1.05] hover:translate-y-[4%]">
           <img
-            src="../../public/assets/Zimbabwe.png"
+            src="src/assets/Zimbabwe.png"
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-125 group-hover:translate-y-[-10%] rounded-2xl"
           />
@@ -43,7 +43,7 @@ const Gallery = () => {
         </div>
         <div className="relative w-[140px] md:w-[272px] h-[150px] md:h-[440px] rounded-2xl group overflow-hidden transition-transform duration-500 hover:scale-[1.05] hover:translate-y-[4%]">
           <img
-            src="../../public/assets/Nepal.png"
+            src="src/assets/Nepal.png"
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-125 group-hover:translate-y-[-10%] rounded-2xl"
           />
@@ -59,7 +59,7 @@ const Gallery = () => {
         <div className="relative w-[140px] md:w-[272px] h-[150px] md:h-[440px] rounded-2xl group overflow-hidden transition-transform duration-500 hover:scale-[1.05] hover:translate-y-[4%]">
           {/* Image */}
           <img
-            src="../../public/assets/South America.png"
+            src="src/assets/South America.png"
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-125 group-hover:translate-y-[-10%] rounded-2xl"
           />
